@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+
+<select name="{{title}}">
+{{#each result}}
+    {{#compare this.code 'FR' operator='=='}}
+    <option value="{{this.code}}" selected>{{this.name}}</option>
+    {{else}}
+    <option value="{{this.code}}">{{this.name}}</option>
+    {{/compare}}
+{{/each}}
+
+</select>
+
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Value</td>
+    </tr>
+    {{#each result}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.code}}</td>
+    </tr>
+    {{/each}}
+
+</table>

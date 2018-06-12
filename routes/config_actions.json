@@ -1,0 +1,66 @@
+{
+    "GET/user": {
+        "controler": "user",
+        "view": "user",
+        "schema": "Users"
+    },
+    "GET/exos": {
+        "controler": "exos",
+        "view": "exos",
+        "schema": "Excercices"
+    },
+    "GET/countries": {
+        "controler": "contact",
+        "view": "countries",
+        "schema": "Countries",
+        "titre": "Liste des pays"
+    },
+    "GET/formUser": {
+        "controler": "formUser",
+        "view": "formUser",
+        "schema": "Users"
+    },
+    "GET/modifyUser": {
+        "controler": "modifyUser",
+        "view": "modifyUser",
+        "schema": "Users"
+    },
+    "GET/newUser": {
+        "controler": "newUser",
+        "view": "formUser"
+    },
+    "GET/createUser": {
+        "controler": "createUser",
+        "view": "modifyUser",
+        "schema": "Users"
+    },
+    "GET/contact": {
+        "controler": "contact",
+        "view": "contact",
+        "schema": "Contacts",
+        "titre": "Liste des contacts"
+    },
+    "GET/deleteuser": {
+        "controler": "deleteUser",
+        "view": "user",
+        "schema": "Users"
+    },
+    "GET/": {
+        "controler": "login",
+        "view": "login",
+        "collection": "",
+        "schema": ""
+    },
+    "GET/index": {
+        "controler": "index",
+        "view": "index",
+        "collection": "",
+        "schema": ""
+    },
+    "GET/logout": {
+        "controler": "logout",
+        "view": "index",
+        "collection": "",
+        "schema": ""
+    }
+}

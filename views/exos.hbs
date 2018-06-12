@@ -1,0 +1,34 @@
+<h1>{{exos.titre}}</h1>
+<p>Liste des exerices</p>
+
+<select name="liste des exos">
+{{#each exos.liste}}
+    <option value="{{this}}">{{this}}</option>
+{{/each}}
+</select>
+
+
+
+
+{{!---<select name="liste des exos">
+
+{{#each result}}
+    <option value="{{this.code}}">{{this.name}}</option>
+{{/each}}
+    
+</select>
+
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Value</td>
+    </tr>
+    {{#each result}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.code}}</td>
+    </tr>
+    {{/each}}
+
+</table>----}}

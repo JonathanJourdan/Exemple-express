@@ -1,0 +1,13 @@
+<h1> Express App : {{title}}</h1>
+<form methode="POST" action="{{form_action}}" id="formAddUser">
+    <input type="hidden" name="id" value="{{user._id}}" /> name : <input type="text" name="name" value="{{user.name}}" /><br/> firstName : <input type="text" name="firstName" value="{{user.firstName}}" /><br/> login : <input type="text" name="login" value="{{user.login}}" /><br/> mdp : <input type="password" name="mdp" value="{{user.mdp}}" /><br/> function : <input type="text" name="function" value="{{user.function}}" /><br/> office : <input type="text" name="office" value="{{user.office}}" /><br/> date_naiss : <input type="text" name="date_naiss" value="{{user.date_naiss}}" /><br/> adresse1 : <input type="text" name="adresse1" value="{{user.adresse1}}" /><br/> adresse2 : <input type="text" name="adresse2" value="{{user.adresse2}}" /><br/> cp : <input type="text" name="cp" value="{{user.cp}}" /><br/> city : <input type="text" name="city" value="{{user.city}}" /><br/> mobile_phone : <input type="text" name="mobile_phone" value="{{user.mobile_phone}}" /><br/> home_phone : <input type="text" name="home_phone" value="{{user.home_phone}}" /><br/>
+    <input type="submit" value="Confirmer la {{libelle}}" />
+</form>
+<!--Script de validation du formulaire de modification-->
+<script>
+    var form = document.getElementById('formAddUser');
+    form.addEventListener('submit', function(evt) {
+        form.action += "/{{user._id}}";
+        form.submit();
+    });
+</script>

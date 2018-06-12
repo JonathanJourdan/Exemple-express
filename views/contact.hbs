@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+
+<select name="{{title}}">
+{{#each result}}
+    <option value="{{this.nom}}">{{this.prenom}} {{this.nom}}</option>
+{{/each}}
+</select>
+
+{{!--<table>
+    <tr>
+        <td>Name</td>
+        <td>Value</td>
+    </tr>
+    {{#each countries}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.code}}</td>
+    </tr>
+    {{/each}}
+
+</table>---}}

@@ -1,0 +1,58 @@
+{
+    "Excercices" : {
+        "collection" : "exos",
+        "schema" : {
+            "_id": "ObjectId",
+            "titre": "String",
+            "liste": []
+        }
+    },
+    "Countries" : {
+        "collection" : "countries",
+        "schema" : {
+            "_id": "ObjectId",
+            "code": "String",
+            "name": "String"
+        }
+    },
+    "Users" : {
+        "collection" : "users",
+        "schema" : {
+            "_id": "ObjectId",
+            "name": "String",
+            "firstName": "String",
+            "login": "String",
+            "mdp": "String",
+            "function": "String",
+            "office": "String",
+            "date_naiss": "String",
+            "adresse1": "String",
+            "adresse2": "String",
+            "cp": "String",
+            "city": "String",
+            "country": {
+                "type":"ObjectId",
+                "ref":"Countries"
+            },
+            "mobile_phone": "String",
+            "home_phone": "String"
+        }
+    },
+    "Contacts" : {
+        "collection" : "contacts",
+        "schema" : {
+            "_id": "ObjectId",
+            "titre": "String",
+            "nom": "String",
+            "prenom": "String",
+            "adresse1": "String",
+            "adresse2": "String",
+            "code_postal": "String",
+            "ville": "String",
+            "tel_mobile": "String",
+            "tel_fixe": "String",
+            "email": "String",
+            "email2": "String"
+        }
+    }
+}
